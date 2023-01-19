@@ -63,6 +63,7 @@ module.exports = class Server {
         req.session.save();
 
         debug(`New Session: ${req.session.id}`);
+        return ({ "code": 200, "success": true})
       }))
 
       // WireGuard
