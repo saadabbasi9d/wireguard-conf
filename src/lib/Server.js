@@ -61,7 +61,6 @@ module.exports = class Server {
 
         req.session.authenticated = true;
         req.session.save();
-
         debug(`New Session: ${req.session.id}`);
         return ({ "code": 200, "success": true})
       }))
