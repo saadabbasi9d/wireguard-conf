@@ -19,7 +19,7 @@ services:
       # - WG_POST_DOWN=echo "Post Down" > /etc/wireguard/post-down.txt
       
     image: saadabbasi9d/wireguard-conf
-    container_name: wg-easy
+    container_name: wireguard-conf
     volumes:
       - .:/etc/wireguard
     ports:
