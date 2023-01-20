@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   wg-easy:
-    image: wg-easy
+    image: wireguard-conf
     command: npm run serve
     volumes:
       - ./src/:/app/
